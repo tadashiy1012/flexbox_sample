@@ -1,0 +1,98 @@
+.main {
+  background: #fcc;
+  min-width: 400px;
+}
+.side {
+  background: #fea;
+  min-width: 200px;
+}
+.main, .side {
+  margin: 8px;
+  padding: 2%;
+  border-radius: 10px;
+}
+@media (min-width: 600px) {
+  .flexbox {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+.inMain {
+  background: #aaf;
+  min-width: 160px;
+}
+.inSide {
+  background: #aff;
+  min-width: 160px;
+}
+.inMain, .inSide {
+  padding: 2%;
+  border-radius: 8px;
+}
+@media (min-width: 200px) {
+  .innerFlexbox {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+.boxA, .boxB, .boxC {
+  background: #cf0;
+  margin: 8px;
+  padding: 2%;
+  border-radius: 10px;
+  min-width: 20%;
+}
+@media (min-width: 600px) {
+  .flexbox2 {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {.flexbox3 {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row;
+  min-height: 300px;
+}}
+.flexbox3 > article {
+  margin: 4px;
+  padding: 2%;
+  border-radius: 7pt;
+  background: #15c;
+  flex: 3 1 60%;
+  order: 2;
+}
+.flexbox3 > nav {
+  margin: 4px;
+  padding: 2%;
+  border-radius: 7pt;
+  background: #c31;
+  flex: 1 6 20%;
+  order: 1;
+}
+.flexbox3 > aside {
+  margin: 4px;
+  padding: 2%;
+  border-radius: 7pt;
+  background: #5c1;
+  flex: 1 6 20%;
+  order: 3;
+}
+
+.flexbox4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox4 > section.centerBox {
+  background: #d4f;
+  margin: 4px;
+  padding: 2%;
+  border-radius: 7pt;
+  width: 50%;
+  height: 80px;
+}
